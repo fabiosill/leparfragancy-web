@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Parfragancy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<canvas id="particle-canvas"></canvas>
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- NAV -->
+<nav id="main-nav">
+  <ul class="nav-links">
+    <li><a href="#about" data-pt="Marca" data-en="Brand">Marca</a></li>
+    <li><a href="#products" data-pt="Produtos" data-en="Products">Produtos</a></li>
+    <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
+  </ul>
+  <button class="lang-btn" id="lang-toggle">EN</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-fog"></div>
+  <div class="hero-content">
+    <p class="hero-tagline-top" data-pt="· Fábio Silva" data-en="· Fábio Silva">· Fábio Silva</p>
+    <h1 class="hero-title">
+      Le Parfragancy
+      <span data-pt="Fragrâncias de Luxo" data-en="Luxury Fragrances">Fragrâncias de Luxo</span>
+    </h1>
+    <div class="hero-line"></div>
+    <p class="hero-subtitle" data-pt="Não criamos perfumes. Nós recuperamos momentos que você ainda não viveu." data-en="We don't create perfumes. We recover moments you haven't lived yet.">
+      Não criamos perfumes. Nós recuperamos momentos que você ainda não viveu.
+    </p>
+    <a href="#products" class="hero-cta" data-pt="Descobrir a Coleção" data-en="Discover the Collection">Descobrir a Coleção</a>
+  </div>
+  <div class="scroll-hint">
+    <span data-pt="Rolar" data-en="Scroll">Rolar</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+<!-- ABOUT -->
+<section id="about" class="section-pad">
+  <div class="about-grid">
+    <div class="about-text">
+      <h2 class="section-title anim-up" data-pt="<span class='gold-accent'>Experiência</span> além do cheiro" data-en="An <span class='gold-accent'>Experience</span> beyond scent"><span class="gold-accent">Experiência</span> além do cheiro</h2>
+      <div class="about-text anim-up">
+        <p data-pt="Le Parfragancy nasceu da paixão por transformar fragrâncias em <em>memórias afetivas</em>. Cada frasco carrega uma história, um instante suspenso no tempo, esperando para ser vivido." data-en="Le Parfragancy was born from a passion for transforming fragrances into <em>emotional memories</em>. Each bottle carries a story, a moment suspended in time, waiting to be lived.">
+          Le Parfragancy nasceu da paixão por transformar fragrâncias em <em>memórias afetivas</em>. Cada frasco carrega uma história, um instante suspenso no tempo, esperando para ser vivido.
+        </p>
+        <p data-pt="Sob a curadoria de <em>Fábio Silva</em>, a marca traduz o luxo da perfumaria internacional com a essência vibrante do Brasil, mostrando que a verdadeira diferença está na experiência, não no preço." data-en="Under the curation of <em>Fábio Silva</em>, the brand translates the luxury of international perfumery with the vibrant essence of Brazil, showing that the true difference lies in the experience, not the price.">
+          Sob a curadoria de <em>Fábio Silva</em>, a marca traduz o luxo da perfumaria internacional com a essência vibrante do Brasil, mostrando que a verdadeira diferença está na experiência, não no preço.
+        </p>
+      </div>
+      <blockquote class="about-quote anim-up" data-pt='"O cheiro certo pode mudar como você sente o mundo, e como o mundo sente você."' data-en='"The right scent can change how you feel the world and how the world feels you."'>
+        "O cheiro certo pode mudar como você sente o mundo, e como o mundo sente você."
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+<footer>
+  <span class="footer-brand">LE PARFRAGANCY</span>
+  <span class="footer-copy" data-pt="© 2025 Fábio Silva · Todos os direitos reservados" data-en="© 2025 Fábio Silva · All rights reserved">© 2025 Fábio Silva · Todos os direitos reservados</span>
+</footer>
+</body>
+</html>
