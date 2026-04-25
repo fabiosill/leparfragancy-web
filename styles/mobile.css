@@ -1,0 +1,20 @@
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav { padding:20px 24px; }
+  .nav-links { display:none; }
+  .about-grid { grid-template-columns:1fr; gap:48px; }
+  .about-visual { height:320px; }
+  .about-logo-big { width:240px;height:240px; }
+  .about-ring:nth-child(1) { width:270px;height:270px; }
+  .about-ring:nth-child(2) { width:300px;height:300px; }
+  .about-ring:nth-child(3) { width:330px;height:330px; }
+  .products-grid { grid-template-columns:1fr 1fr; }
+  #cursor, #cursor-ring { display:none; }
+  body { cursor:auto; }
+  .hero-cta, .lang-btn, .wa-btn { cursor:pointer; }
+  .nav-links a { cursor:pointer; }
+}
+@media(max-width:560px){
+  .products-grid { grid-template-columns:1fr; }
+  footer { flex-direction:column; text-align:center; }
+}
