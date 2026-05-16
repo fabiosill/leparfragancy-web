@@ -85,8 +85,8 @@
   }
   .product-card { aspect-ratio: 1; }
 
-  .hero-title { font-size: clamp(2.8rem, 10vw, 5rem); }
-  .hero-subtitle { font-size: 0.73rem; }
+  .hero-title { font-size: clamp(4vw, 8vw, 8vw); }
+  .hero-subtitle { font-size: 2.5vw; }
   .hero-ctas { flex-direction: column; align-items: center; }
 
   .section-title { font-size: clamp(1.9rem, 8vw, 2.8rem); }
@@ -113,7 +113,7 @@
   .corner-tr, .corner-br { right: 16px; }
 
   .sensory-words { gap: 6px 12px; }
-  .sensory-word { font-size: clamp(1.1rem, 5vw, 1.5rem); }
+  .sensory-word { font-size: clamp(2vw, 5vw, 5vw); }
   .sensory-stat { flex-direction: column; gap: 28px; }
   .stat-divider { display: none; }
 
@@ -126,7 +126,7 @@
 @media (max-width: 380px) {
   nav { padding: 14px 14px; }
   .section-pad { padding: 56px 16px; }
-  .hero-title { font-size: clamp(2.5rem, 12vw, 3.8rem); }
+  .hero-title { font-size: clamp(6vw, 8vw, 8vw); }
   .hero-tagline-top { font-size: 0.6rem; letter-spacing: 0.22em; }
   .products-grid { gap: 16px; padding: 0 12px 12px; }
 }
