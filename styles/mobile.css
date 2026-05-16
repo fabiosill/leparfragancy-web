@@ -28,7 +28,7 @@
 
   /* Products */
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 18px;
     padding: 0 16px 16px;
   }
@@ -83,10 +83,10 @@
     gap: 20px;
     padding: 0 16px 16px;
   }
-  .product-card { aspect-ratio: 4/3; }
+  .product-card { aspect-ratio: 1; }
 
-  .hero-title { font-size: clamp(2.8rem, 14vw, 5rem); }
-  .hero-subtitle { font-size: 1.05rem; }
+  .hero-title { font-size: clamp(2.8rem, 10vw, 5rem); }
+  .hero-subtitle { font-size: 0.88rem; }
   .hero-ctas { flex-direction: column; align-items: center; }
 
   .section-title { font-size: clamp(1.9rem, 8vw, 2.8rem); }
