@@ -86,7 +86,7 @@
   .product-card { aspect-ratio: 1; }
 
   .hero-title { font-size: clamp(2.8rem, 10vw, 5rem); }
-  .hero-subtitle { font-size: 0.88rem; }
+  .hero-subtitle { font-size: 3.2vw; }
   .hero-ctas { flex-direction: column; align-items: center; }
 
   .section-title { font-size: clamp(1.9rem, 8vw, 2.8rem); }
@@ -126,7 +126,7 @@
 @media (max-width: 380px) {
   nav { padding: 14px 14px; }
   .section-pad { padding: 56px 16px; }
-  .hero-title { font-size: clamp(2.5rem, 15vw, 3.8rem); }
+  .hero-title { font-size: clamp(12vw, 10vw, 5vw); }
   .hero-tagline-top { font-size: 0.6rem; letter-spacing: 0.22em; }
   .products-grid { gap: 16px; padding: 0 12px 12px; }
 }
