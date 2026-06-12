@@ -6,40 +6,38 @@
 <title>Le Parfragancy · Fragrâncias de Luxo</title>
 <meta name="description" content="Le Parfragancy — Fragrâncias de luxo inspiradas nos grandes clássicos do mundo parfumeur. Curadoria de Fábio Silva.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Montserrat:wght@200;300;400;500&family=Cinzel:wght@300;400;600&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<link rel="stylesheet" href="styles/styles.css">
-<link rel="stylesheet" href="styles/mobile.css">
-<link href="img/leparfragancylogo.png" rel="icon" type="image/png">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 
 <!-- PRELOADER -->
 <div id="preloader">
   <div class="pre-inner">
-    <img src="img/leparfragancylogo.png" class="pre-logo" alt="Le Parfragancy">
-    <p class="pre-brand">LE PARFRAGANCY</p>
+    <img src="img/logo.png" class="pre-logo" alt="Le Parfragancy">
+    <p class="pre-brand">Le Parfragancy</p>
     <div class="pre-bar"><div class="pre-fill"></div></div>
     <p class="pre-tagline">Fragrâncias de Luxo</p>
   </div>
 </div>
 
 <div id="scroll-progress"></div>
-
 <canvas id="particle-canvas"></canvas>
-<div id="cursor"><div class="cursor-dot"></div></div>
+<div id="cursor"></div>
 <div id="cursor-ring"></div>
 
 <!-- NAV -->
 <nav id="main-nav">
-  <div class="nav-logo">
-    <img src="img/leparfragancylogo.png" alt="Le Parfragancy">
+  <a href="#hero" class="nav-logo">
+    <img src="img/logo.png" alt="Le Parfragancy">
     <span class="nav-brand">Le Parfragancy</span>
-  </div>
+  </a>
   <ul class="nav-links">
+    <li><a href="#products" data-pt="Coleção" data-en="Collection">Coleção</a></li>
     <li><a href="#about" data-pt="Marca" data-en="Brand">Marca</a></li>
-    <li><a href="#products" data-pt="Essência" data-en="Essence">Essência</a></li>
     <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
   </ul>
   <div class="nav-right">
@@ -55,66 +53,64 @@
   <div class="mobile-menu-inner">
     <ul>
       <li><a href="#about" data-pt="Marca" data-en="Brand">Marca</a></li>
-      <li><a href="#products" data-pt="Essência" data-en="Essence">Essência</a></li>
+      <li><a href="#products" data-pt="Coleção" data-en="Collection">Coleção</a></li>
       <li><a href="#contact" data-pt="Contato" data-en="Contact">Contato</a></li>
     </ul>
-    <p class="mobile-menu-brand">LE PARFRAGANCY</p>
+    <p class="mobile-menu-brand">Le Parfragancy</p>
   </div>
 </div>
 
 <!-- HERO -->
 <section id="hero">
-  <div class="hero-bg">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-light"></div>
+  <div class="hero-rules">
+    <div class="hero-rule" style="top: 28%"></div>
+    <div class="hero-rule" style="top: 55%"></div>
+    <div class="hero-rule" style="top: 72%"></div>
   </div>
-  <div class="hero-fog"></div>
+
   <div class="hero-content">
-    <p class="hero-tagline-top">
-      <span class="tag-line"></span>
-      <span class="tag-text" data-pt=" · Fábio Silva" data-en=" · Fábio Silva"> · Fábio Silva</span>
-      <span class="tag-line tag-line-right"></span>
+    <p class="hero-eyebrow">
+      <span data-pt="Fábio Silva" data-en="Fábio Silva">Fábio Silva</span>
     </p>
-    <h1 class="hero-title">
-      <span class="title-split">Le Parfragancy</span>
-    </h1>
-    <p class="hero-subtitle-small" data-pt="FRAGRÂNCIAS DE LUXO" data-en="LUXURY FRAGRANCES">FRAGRÂNCIAS DE LUXO</p>
-    <div class="hero-line-wrap"><div class="hero-line"></div></div>
-    <p class="hero-subtitle" data-pt="Não criamos perfumes. Recuperamos momentos que você ainda não viveu." data-en="We don't create perfumes. We recover moments you haven't lived yet.">
+    <h1 class="hero-title">Le Parfragancy</h1>
+    <p class="hero-subtitle-label" data-pt="Fragrâncias de Luxo" data-en="Luxury Fragrances">Fragrâncias de Luxo</p>
+    <p class="hero-quote" data-pt="Não criamos perfumes. Recuperamos momentos que você ainda não viveu." data-en="We don't create perfumes. We recover moments you haven't lived yet.">
       Não criamos perfumes. Recuperamos momentos que você ainda não viveu.
     </p>
     <div class="hero-ctas">
-      <a href="#products" class="hero-cta magnetic" data-pt="Descobrir a Coleção" data-en="Discover the Collection">
+      <a href="#products" class="btn-primary magnetic" data-pt="Descobrir a Coleção" data-en="Discover the Collection">
         <span>Descobrir a Coleção</span>
       </a>
-      <a href="#about" class="hero-cta-ghost magnetic" data-pt="Nossa Essência" data-en="Our Essence">
+      <a href="#about" class="btn-ghost magnetic" data-pt="Nossa Essência" data-en="Our Essence">
         <span>Nossa Essência</span>
       </a>
     </div>
   </div>
+
   <div class="scroll-hint">
     <span data-pt="Rolar" data-en="Scroll">Rolar</span>
     <div class="scroll-line"></div>
   </div>
-  <!-- FIX #4: corner-mark começa com opacity:0 no CSS -->
+
   <div class="corner-mark corner-tl"></div>
   <div class="corner-mark corner-tr"></div>
   <div class="corner-mark corner-bl"></div>
   <div class="corner-mark corner-br"></div>
 </section>
 
-<div class="gold-divider"></div>
-<br><br><br>
+<div class="divider"></div>
+
 <!-- PRODUCTS -->
 <section id="products">
   <div class="products-header">
+    <p class="section-eyebrow anim-up" data-pt="A Coleção" data-en="The Collection">A Coleção</p>
     <h2 class="section-title anim-up"
-      data-pt='Nossas <span class="gold-accent">Fragrâncias</span>'
-      data-en='Our <span class="gold-accent">Fragrances</span>'>
-      Nossas <span class="gold-accent">Fragrâncias</span>
+      data-pt='Nossas <span class="silver-accent">Fragrâncias</span>'
+      data-en='Our <span class="silver-accent">Fragrances</span>'>
+      Nossas <span class="silver-accent">Fragrâncias</span>
     </h2>
-
     <p class="anim-up products-desc"
       data-pt='Cada essência é uma obra de arte olfativa, <em>inspirada</em> nos grandes clássicos do mundo parfumeur.'
       data-en='Each essence is an olfactory work of art, <em>inspired</em> by the great classics of the parfumeur world.'>
@@ -132,121 +128,85 @@
       data-desc-pt="Uma fragrância feminina e vibrante, que combina a intensidade do Rosé com notas florais e frutadas únicas."
       data-desc-en="A feminine and vibrant fragrance, combining the intensity of Rosé with unique floral and fruity notes.">
       <img src="img/212vip.jpeg" alt="521 VIP Rose" loading="lazy">
-      <div class="product-glow"></div>
       <div class="product-overlay"></div>
-      <div class="product-frame">
-        <span class="frame-corner frame-tl"></span>
-        <span class="frame-corner frame-tr"></span>
-        <span class="frame-corner frame-bl"></span>
-        <span class="frame-corner frame-br"></span>
-      </div>
       <div class="product-number">01</div>
       <div class="product-info">
         <p class="product-inspired" data-pt="Inspirado em 212 VIP Rosé" data-en="Inspired by 212 VIP Rosé">Inspirado em 212 VIP Rosé</p>
         <h3 class="product-name">521 VIP Rose</h3>
-        <span class="product-cta">Ver Detalhes <span class="cta-arrow">→</span></span>
+        <span class="product-cta">Ver Detalhes <span class="cta-line"></span></span>
       </div>
     </div>
-
 
     <div class="product-card"
       data-product="Imortal"
-      data-inspired-pt="Inspirado em Invictus Paco Rabanne"
-      data-inspired-en="Inspired by Invictus Paco Rabanne"
-      data-img="img/invictus.jpeg"
-      data-desc-pt="Fresco, aquático e intenso. Uma fragrância que transmite força e conquista em cada spray."
-      data-desc-en="Fresh, aquatic and intense. A fragrance that conveys strength and conquest with every spray.">
-      <img src="img/invictus.jpeg" alt="Imortal" loading="lazy">
-      <div class="product-glow"></div>
+      data-inspired-pt="Inspirado em Sauvage Elixir"
+      data-inspired-en="Inspired by Sauvage Elixir"
+      data-img="img/imortal.jpeg"
+      data-desc-pt="Intenso e duradouro, Imortal traz a majestade do Sauvage Elixir com um toque exclusivo de madeiras brasileiras."
+      data-desc-en="Intense and lasting, Imortal brings the majesty of Sauvage Elixir with an exclusive touch of Brazilian woods.">
+      <img src="img/imortal.jpeg" alt="Imortal" loading="lazy">
       <div class="product-overlay"></div>
-      <div class="product-frame">
-        <span class="frame-corner frame-tl"></span>
-        <span class="frame-corner frame-tr"></span>
-        <span class="frame-corner frame-bl"></span>
-        <span class="frame-corner frame-br"></span>
+      <div class="product-number">02</div>
+      <div class="product-info">
+        <p class="product-inspired" data-pt="Inspirado em Sauvage Elixir" data-en="Inspired by Sauvage Elixir">Inspirado em Sauvage Elixir</p>
+        <h3 class="product-name">Imortal</h3>
+        <span class="product-cta">Ver Detalhes <span class="cta-line"></span></span>
       </div>
+    </div>
+
+    <div class="product-card"
+      data-product="Bleu Noir"
+      data-inspired-pt="Inspirado em Bleu de Chanel"
+      data-inspired-en="Inspired by Bleu de Chanel"
+      data-img="img/bleunoir.jpeg"
+      data-desc-pt="Sofisticação em cada nota. Bleu Noir reinterpreta o clássico Bleu de Chanel com profundidade e modernidade."
+      data-desc-en="Sophistication in every note. Bleu Noir reinterprets the classic Bleu de Chanel with depth and modernity.">
+      <img src="img/bleunoir.jpeg" alt="Bleu Noir" loading="lazy">
+      <div class="product-overlay"></div>
       <div class="product-number">03</div>
       <div class="product-info">
-        <p class="product-inspired" data-pt="Inspirado em Invictus Paco Rabanne" data-en="Inspired by Invictus Paco Rabanne">Inspirado em Invictus Paco Rabanne</p>
-        <h3 class="product-name">Imortal</h3>
-        <span class="product-cta">Ver Detalhes <span class="cta-arrow">→</span></span>
+        <p class="product-inspired" data-pt="Inspirado em Bleu de Chanel" data-en="Inspired by Bleu de Chanel">Inspirado em Bleu de Chanel</p>
+        <h3 class="product-name">Bleu Noir</h3>
+        <span class="product-cta">Ver Detalhes <span class="cta-line"></span></span>
       </div>
     </div>
 
     <div class="product-card"
-      data-product="La Bella"
-      data-inspired-pt="Inspirado em La Vie Est Belle Lancôme"
-      data-inspired-en="Inspired by La Vie Est Belle Lancôme"
-      data-img="img/labella.jpeg"
-      data-desc-pt="Doce e sofisticado, La Bella captura a alegria de viver com notas de iris, pralinê e baunilha."
-      data-desc-en="Sweet and sophisticated, La Bella captures the joy of living with iris, praline and vanilla notes.">
-      <img src="img/labella.jpeg" alt="La Bella" loading="lazy">
-      <div class="product-glow"></div>
+      data-product="Oud Sublime"
+      data-inspired-pt="Inspirado em Black Afgano"
+      data-inspired-en="Inspired by Black Afgano"
+      data-img="img/oudsublime.jpeg"
+      data-desc-pt="Uma jornada sensorial ao oriente. Oud Sublime captura a essência mística do Black Afgano em toda a sua majestade."
+      data-desc-en="A sensory journey to the orient. Oud Sublime captures the mystical essence of Black Afgano in all its majesty.">
+      <img src="img/oudsublime.jpeg" alt="Oud Sublime" loading="lazy">
       <div class="product-overlay"></div>
-      <div class="product-frame">
-        <span class="frame-corner frame-tl"></span>
-        <span class="frame-corner frame-tr"></span>
-        <span class="frame-corner frame-bl"></span>
-        <span class="frame-corner frame-br"></span>
-      </div>
       <div class="product-number">04</div>
       <div class="product-info">
-        <p class="product-inspired" data-pt="Inspirado em La Vie Est Belle Lancôme" data-en="Inspired by La Vie Est Belle Lancôme">Inspirado em La Vie Est Belle Lancôme</p>
-        <h3 class="product-name">La Bella</h3>
-        <span class="product-cta">Ver Detalhes <span class="cta-arrow">→</span></span>
+        <p class="product-inspired" data-pt="Inspirado em Black Afgano" data-en="Inspired by Black Afgano">Inspirado em Black Afgano</p>
+        <h3 class="product-name">Oud Sublime</h3>
+        <span class="product-cta">Ver Detalhes <span class="cta-line"></span></span>
       </div>
     </div>
 
     <div class="product-card"
-      data-product="For You"
-      data-inspired-pt="Inspirado em Prada Paradoxe"
-      data-inspired-en="Inspired by Prada Paradoxe"
-      data-img="img/prada.jpeg"
-      data-desc-pt="Floral e sedoso, For You celebra a feminilidade com camadas de âmbar, jasmim e almíscar branco."
-      data-desc-en="Floral and silky, For You celebrates femininity with layers of amber, jasmine and white musk.">
-      <img src="img/prada.jpeg" alt="For You" loading="lazy">
-      <div class="product-glow"></div>
-      <div class="product-overlay"></div>
-      <div class="product-frame">
-        <span class="frame-corner frame-tl"></span>
-        <span class="frame-corner frame-tr"></span>
-        <span class="frame-corner frame-bl"></span>
-        <span class="frame-corner frame-br"></span>
-      </div>
-      <div class="product-number">06</div>
-      <div class="product-info">
-        <p class="product-inspired" data-pt="Inspirado em Prada Paradoxe" data-en="Inspired by Prada Paradoxe">Inspirado em Prada Paradoxe</p>
-        <h3 class="product-name">For You</h3>
-        <span class="product-cta">Ver Detalhes <span class="cta-arrow">→</span></span>
-      </div>
-    </div>
-
-    <div class="product-card product-card-featured"
       data-product="Al-Asad"
       data-inspired-pt="Inspirado em Asad by Lattafa"
       data-inspired-en="Inspired by Asad by Lattafa"
-      data-img="img/ai-asad.jpeg"
-      data-desc-pt="Uma fragrância árabe imponente, com notas amadeiradas e especiadas que evocam o deserto ao anoitecer."
-      data-desc-en="An imposing Arabic fragrance, with woody and spiced notes that evoke the desert at nightfall.">
-      <img src="img/ai-asad.jpeg" alt="Al-Asad" loading="lazy">
-      <div class="product-glow"></div>
+      data-img="img/alasad.jpeg"
+      data-desc-pt="Poder e presença. Al-Asad reinterpreta a força do Asad by Lattafa com uma marcante intensidade árabe."
+      data-desc-en="Power and presence. Al-Asad reinterprets the strength of Asad by Lattafa with a striking Arabic intensity.">
+      <img src="img/alasad.jpeg" alt="Al-Asad" loading="lazy">
       <div class="product-overlay"></div>
-      <div class="product-frame">
-        <span class="frame-corner frame-tl"></span>
-        <span class="frame-corner frame-tr"></span>
-        <span class="frame-corner frame-bl"></span>
-        <span class="frame-corner frame-br"></span>
-      </div>
-      <div class="product-number">02</div>
+      <div class="product-number">06</div>
       <div class="product-badge" data-pt="Exclusivo" data-en="Exclusive">Exclusivo</div>
       <div class="product-info">
         <p class="product-inspired" data-pt="Inspirado em Asad by Lattafa" data-en="Inspired by Asad by Lattafa">Inspirado em Asad by Lattafa</p>
         <h3 class="product-name">Al-Asad</h3>
-        <span class="product-cta">Ver Detalhes <span class="cta-arrow">→</span></span>
+        <span class="product-cta">Ver Detalhes <span class="cta-line"></span></span>
       </div>
     </div>
 
-    <div class="product-card product-card-featured"
+    <div class="product-card"
       data-product="Yaha"
       data-inspired-pt="Inspirado em Yaha by Lattafa"
       data-inspired-en="Inspired by Yaha by Lattafa"
@@ -254,36 +214,30 @@
       data-desc-pt="Uma criação exclusiva da Linha Bortoletto. Yaha é delicada, floral e envolvente — uma assinatura única."
       data-desc-en="An exclusive creation from the Bortoletto Line. Yaha is delicate, floral and enveloping — a unique signature.">
       <img src="img/yaha.jpeg" alt="Yaha" loading="lazy">
-      <div class="product-glow"></div>
       <div class="product-overlay"></div>
-      <div class="product-frame">
-        <span class="frame-corner frame-tl"></span>
-        <span class="frame-corner frame-tr"></span>
-        <span class="frame-corner frame-bl"></span>
-        <span class="frame-corner frame-br"></span>
-      </div>
       <div class="product-number">07</div>
       <div class="product-badge" data-pt="Exclusivo" data-en="Exclusive">Exclusivo</div>
       <div class="product-info">
         <p class="product-inspired" data-pt="Inspirado em Yaha by Lattafa" data-en="Inspired by Yaha by Lattafa">Inspirado em Yaha by Lattafa</p>
         <h3 class="product-name">Yaha</h3>
-        <span class="product-cta">Ver Detalhes <span class="cta-arrow">→</span></span>
+        <span class="product-cta">Ver Detalhes <span class="cta-line"></span></span>
       </div>
     </div>
 
-  </div><!-- /products-grid -->
+  </div>
 </section>
 
-<div class="gold-divider"></div>
+<div class="divider"></div>
 
 <!-- ABOUT -->
 <section id="about" class="section-pad">
   <div class="about-grid">
     <div class="about-text">
+      <p class="section-eyebrow anim-up" data-pt="A Marca" data-en="The Brand">A Marca</p>
       <h2 class="section-title anim-up"
-        data-pt="<span class='gold-accent'>Experiência</span><br>além do cheiro"
-        data-en="An <span class='gold-accent'>Experience</span><br>beyond scent">
-        <span class="gold-accent">Experiência</span><br>além do cheiro
+        data-pt="<span class='silver-accent'>Experiência</span><br>além do cheiro"
+        data-en="An <span class='silver-accent'>Experience</span><br>beyond scent">
+        <span class="silver-accent">Experiência</span><br>além do cheiro
       </h2>
       <div class="about-paragraphs">
         <p class="anim-up"
@@ -302,39 +256,58 @@
         data-en='"The right fragrance transforms not only your day, but the way the world perceives your presence."'>
         "A fragrância certa transforma não só o seu dia, mas a forma como o mundo percebe sua presença."
       </blockquote>
+      <div class="about-stats">
+        <div class="mini-stat">
+          <span class="mini-num" data-count="7">0</span>
+          <span class="mini-label" data-pt="Fragrâncias" data-en="Fragrances">Fragrâncias</span>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-num" data-count="100">0</span>
+          <span class="mini-label" data-pt="Clientes Satisfeitos" data-en="Happy Clients">Clientes Satisfeitos</span>
+        </div>
+        <div class="mini-stat">
+          <span class="mini-num" data-count="2025">0</span>
+          <span class="mini-label" data-pt="Fundada em" data-en="Founded in">Fundada em</span>
+        </div>
+      </div>
     </div>
+
     <div class="about-visual anim-scale">
       <div class="about-ring"></div>
       <div class="about-ring"></div>
       <div class="about-ring"></div>
       <div class="about-glow"></div>
-      <img src="img/leparfragancylogo.png" class="about-logo-big" alt="Le Parfragancy">
+      <img src="img/logo.png" class="about-logo-big" alt="Le Parfragancy">
       <div class="about-label-float"><span>Est. 2025</span></div>
     </div>
   </div>
-<div class="gold-divider"></div>
 </section>
+
+<div class="divider"></div>
 
 <!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
+    <p class="section-eyebrow anim-up" data-pt="Fale Conosco" data-en="Get in Touch">Fale Conosco</p>
     <h2 class="section-title anim-up"
-      data-pt="Descubra sua nova <span class='gold-accent'>Assinatura</span><br>"
-      data-en="Descovery your new <span class='gold-accent'>Signature</span><br>">
-      Descubra sua nova <span class="gold-accent">Assinatura</span><br>
+      data-pt="Descubra sua nova <span class='silver-accent'>Assinatura</span>"
+      data-en="Discover your new <span class='silver-accent'>Signature</span>">
+      Descubra sua nova <span class="silver-accent">Assinatura</span>
     </h2>
     <p class="contact-subtitle anim-up"
       data-pt="Entre em contato e descubra qual fragrância foi criada para você."
       data-en="Get in touch and discover which fragrance was created for you.">
       Entre em contato e confira qual fragrância foi criada para você.
     </p>
-    <a href="https://api.whatsapp.com/message/5PREFVWU4CWXD1?autoload=1&app_absent=0" target="_blank" rel="noopener" class="wa-btn magnetic anim-up" id="wa-link">
-      <svg class="wa-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <a href="https://api.whatsapp.com/message/5PREFVWU4CWXD1?autoload=1&app_absent=0"
+       target="_blank" rel="noopener"
+       class="wa-btn magnetic anim-up" id="wa-link">
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
       </svg>
       <span data-pt="Falar no WhatsApp" data-en="Chat on WhatsApp">Falar no WhatsApp</span>
     </a>
-    <p class="contact-owner"
+    <p class="contact-owner anim-up"
       data-pt="Le Parfragancy · <strong>Fábio Silva</strong>"
       data-en="Le Parfragancy · <strong>Fábio Silva</strong>">
       Le Parfragancy · <strong>Fábio Silva</strong>
@@ -343,11 +316,11 @@
 </section>
 
 <footer>
-  <span class="footer-brand">LE PARFRAGANCY</span>
+  <span class="footer-brand">Le Parfragancy</span>
   <div class="footer-links">
-    <a href="#about">Marca</a>
-    <a href="#products">Coleção</a>
-    <a href="#contact">Contato</a>
+    <a href="#about" data-pt="Marca" data-en="Brand">Marca</a>
+    <a href="#products" data-pt="Coleção" data-en="Collection">Coleção</a>
+    <a href="#contact" data-pt="Contato" data-en="Contact">Contato</a>
   </div>
   <span class="footer-copy"
     data-pt="© 2025 Fábio Silva · Todos os direitos reservados"
@@ -365,28 +338,25 @@
         <path d="M18 6L6 18M6 6l12 12"/>
       </svg>
     </button>
-    <div class="modal-content">
-      <div class="modal-img-wrap">
-        <img id="modal-img" src="" alt="">
-        <div class="modal-img-glow"></div>
-      </div>
-      <div class="modal-details">
-        <p class="modal-inspired" id="modal-inspired"></p>
-        <h2 class="modal-name" id="modal-name"></h2>
-        <div class="modal-divider"></div>
-        <p class="modal-desc" id="modal-desc"></p>
-        <a href="https://api.whatsapp.com/message/5PREFVWU4CWXD1?autoload=1&app_absent=0"
-           target="_blank" rel="noopener" class="modal-wa">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-          </svg>
-          <span id="modal-wa-text">Pedir pelo WhatsApp</span>
-        </a>
-      </div>
+    <div class="modal-img-wrap">
+      <img id="modal-img" src="" alt="">
+      <div class="modal-img-glow"></div>
+    </div>
+    <div class="modal-details">
+      <p class="modal-inspired" id="modal-inspired"></p>
+      <h2 class="modal-name" id="modal-name"></h2>
+      <div class="modal-divider"></div>
+      <p class="modal-desc" id="modal-desc"></p>
+      <a href="https://api.whatsapp.com/message/5PREFVWU4CWXD1?autoload=1&app_absent=0"
+         target="_blank" rel="noopener" class="modal-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span id="modal-wa-text">Pedir pelo WhatsApp</span>
+      </a>
     </div>
   </div>
 </div>
-
-<script src="script.js"></script>
+<script src="script/main.js"></script>
 </body>
 </html>
