@@ -1158,13 +1158,37 @@ footer {
 @media (max-width: 600px) {
   /* Products: single column */
   .products-grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(10px, 1.5vw, 16px);
+  }
+  .hero-title{
+      font-size: clamp(1.8vw, 7vw, 4.5rem);
   }
 
   /* Product card: less tall on single column */
   .product-card {
     aspect-ratio: 3 / 4;
+  }
+  .product-inspired {
+  font-size: clamp(1.36vw, 0.8vw, 0.54rem);
+  }
+  .product-name {
+    font-family: var(--font-display);
+    font-size: clamp(2.75vw, 1.8vw, 1.25rem);
+    font-weight: 400; letter-spacing: 0.08em;
+    color: var(--silk);
+    margin-bottom: clamp(8px, 1.5vw, 14px);
+    /* Prevent long names from overflowing */
+    word-break: break-word;
+  }
+  .product-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-ui);
+    font-size: clamp(1.40vw, 0.8vw, 0.56rem);
+    font-weight: 300; letter-spacing: 0.3em;
+    color: var(--mist); text-transform: uppercase;
+    opacity: 0; transform: translateY(8px);
+    transition: opacity 0.4s ease 0.05s, transform 0.4s ease 0.05s, color 0.3s ease;
   }
 
   /* Hero CTAs: stacked, full-width */
