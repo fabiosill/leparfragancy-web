@@ -1170,7 +1170,7 @@ footer {
     aspect-ratio: 3 / 4;
   }
   .product-inspired {
-  font-size: clamp(1.36vw, 0.8vw, 0.54rem);
+  font-size: clamp(1.16vw, 0.8vw, 0.54rem);
   }
   .product-name {
     font-family: var(--font-display);
